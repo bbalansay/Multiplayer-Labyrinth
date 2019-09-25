@@ -1,0 +1,149 @@
+{
+  "id": "Labyrinth",
+
+  "treasure": "HUSKY CARD",
+  "playerStart": "THE AVE",
+  "monsterStart": "RED SQUARE",
+  "goal": "LIGHT RAIL",
+
+  "Monster": {
+    "name": "JOEL ROSS",
+    "desc": "Oh no! You've run into JOEL ROSS!",
+    "playerWin": "JOEL ROSS died from reading your awfully terrible code.",
+    "monsterWin": "JOEL ROSS tells you to have a wonderful day, while simultaneously kicking you out of the University of Washington for having awful code.",
+    "weakness": "BAD CODE"
+  },
+
+  "Items": [
+    {
+      "name": "BAD CODE",
+      "passive": "For some reason, your laptop is open and sitting on the ground with the BAD CODE that you wrote for INFO 498 open on the desktop.",
+      "active": "You display your BAD CODE for all the world to see! Then you put it away."
+    },
+    {
+      "name": "RAY BANS",
+      "passive": "You see one of your friends passed out on the sidewalk wearing RAY BANS.",
+      "active": "You wear the RAY BANS. You look pretty cool now, and slightly unrecognizable."
+    },
+    {
+      "name": "AIRPODS",
+      "passive": "Someone seems to have dropped their AIRPODS on the ground.",
+      "active": "You wear the AIRPODS. Now everyone will assume that you can't hear them and don't even want to talk to you because you look like a dork!"
+    },
+    {
+      "name": "HUSKY CARD",
+      "passive": "Your HUSKY CARD is on the steps of Suzzallo Library!",
+      "active": "You throw your HUSKY CARD away!"
+    }
+  ],
+
+  "Hazards": [
+    {
+      "name": "TOURISTS",
+      "canPass": "The tourists ignore you and you successfully avoid any nuisance.",
+      "cannot": "There are tourists over there! I don't want them to bother me!",
+      "weakness": "AIRPODS"
+    },
+    {
+      "name": "EX",
+      "canPass": "Your ex does not recognize you as you walk past them.",
+      "cannot": "Oh no, your ex is over there! They might recognize you if you walk by!",
+      "weakness": "RAY BANS"
+    },
+    {
+      "name": "OLD FRIENDS",
+      "canPass": "You pass your high school friends unnoticed.",
+      "cannot": "You see your old high school pals. You'd rather avoid them...",
+      "weakness": "RAY BANS"
+    },
+    {
+      "name": "CROWD",
+      "canPass": "The crowd now parts due to your god-like status.",
+      "cannot": "A big annoying crowd is in your way!",
+      "weakness": "AIRPODS"
+    }
+  ],
+
+  "Locations": [
+    {
+      "name": "DICK'S DRIVE-IN",
+      "desc": "You are at Dick's! The smell of delicious burgers fills the air.",
+      "items": ["BAD CODE"],
+      "hazard": "CROWD",
+      "north": null,
+      "south": null,
+      "east": "SAFEWAY",
+      "west": null
+    },
+    {
+      "name": "SAFEWAY",
+      "desc": "You arrive at Safeway! Nothing really special here, mostly just fake IDs and parking lots.",
+      "items": ["RAY BANS"],
+      "hazard": null,
+      "north": null,
+      "south": "THE AVE",
+      "east": "GREEK ROW",
+      "west": "DICK'S DRIVE-IN"
+    },
+    {
+      "name": "GREEK ROW",
+      "desc": "You are in Greek Row! You're getting further away from campus...",
+      "items": ["BAD CODE"],
+      "hazard": "OLD FRIENDS",
+      "north": null,
+      "south": "NORTH CAMPUS",
+      "east": null,
+      "west": "SAFEWAY"
+    },
+    {
+      "name": "THE AVE",
+      "desc": "You are on University Way NE! Maybe try heading to campus...",
+      "items": ["AIRPODS"],
+      "hazard": null,
+      "north": "SAFEWAY",
+      "south": "WEST CAMPUS",
+      "east": "NORTH CAMPUS",
+      "west": null
+    },
+    {
+      "name": "NORTH CAMPUS",
+      "desc": "You are standing next to the dorms in the north part of campus. Not much going on here...",
+      "items": ["RAY BANS"],
+      "hazard": null,
+      "north": "GREEK ROW",
+      "south": "RED SQUARE",
+      "east": null,
+      "west": "THE AVE"
+    },
+    {
+      "name": "WEST CAMPUS",
+      "desc": "You are in west campus! It seems lively to the east.",
+      "items": ["AIRPODS"],
+      "hazard": "EX",
+      "north": "THE AVE",
+      "south": null,
+      "east": "RED SQUARE",
+      "west": null
+    },
+    {
+      "name": "RED SQUARE",
+      "desc": "You are now in central campus! You can go lots of places from here.",
+      "items": ["HUSKY CARD"],
+      "hazard": "TOURISTS",
+      "north": "NORTH CAMPUS",
+      "south": "LIGHT RAIL",
+      "east": null,
+      "west": "WEST CAMPUS"
+    },
+    {
+      "name": "LIGHT RAIL",
+      "desc": "You've made your way to the light rail! Maybe you can go home now...",
+      "items": [],
+      "hazard": null,
+      "north": "RED SQUARE",
+      "south": null,
+      "east": null,
+      "west": null
+    }
+  ]
+}
