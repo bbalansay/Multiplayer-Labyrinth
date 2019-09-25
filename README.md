@@ -1,3 +1,3 @@
-# Multi-Player Labyrinth
+# Multiplayer Labyrinth
 
-This repository contains code for a simple text-based adventure game playable by multiple people, created for the _Software Architecture_ course at the UW iSchool.
+A multiplayer game run from the command line, players race against one another to overcome monsters and obstacles to complete the Labyrinth. This game is built with TypeScript and run with Node.js, utilizing the client-server architecture and WebSockets to afford communication between players and game.
